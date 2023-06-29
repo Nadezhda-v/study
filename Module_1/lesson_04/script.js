@@ -31,7 +31,8 @@
 
     if(Number.isNaN(outQuantity) || Number.isNaN(outPrice)) {
         alert('Вы ввели некорректные данные')
+    }else{
+        alert(out);
     }
-
 }
 

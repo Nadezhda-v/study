@@ -56,7 +56,7 @@ do {
 
 let count = Math.round((max - min + 1) * 0.3);
 
-if ((max - min + 1) >= 50) {
+if ((max - min + 1) >= 50 && (max - min + 1) < 101) {
     count = 15;
 }
 

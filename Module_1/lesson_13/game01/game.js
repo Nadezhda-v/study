@@ -63,9 +63,9 @@
         };
 
         if (
-          (inputPlayer === 'камень' && inputComputer === 'ножницы') ||
-          (inputPlayer === 'ножницы' && inputComputer === 'бумага') ||
-          (inputPlayer === 'бумага' && inputComputer === 'камень')
+          (inputPlayer === FIGURES[0] && inputComputer === FIGURES[1]) ||
+          (inputPlayer === FIGURES[1] && inputComputer === FIGURES[2]) ||
+          (inputPlayer === FIGURES[2] && inputComputer === FIGURES[0]) 
         ) {
           alert(`Компьютер: ${inputComputer}\nВы: ${inputPlayer}\nВы выйграли!`);
           result.player += 1;

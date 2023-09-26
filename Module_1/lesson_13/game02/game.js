@@ -104,12 +104,9 @@
         }
 
         if (
-          (inputPlayer === 'камень' && inputComputer === 'ножницы') ||
-          (inputPlayer === 'ножницы' && inputComputer === 'бумага') ||
-          (inputPlayer === 'бумага' && inputComputer === 'камень') ||
-          (inputPlayer === 'rock' && inputComputer === 'scissors') ||
-          (inputPlayer === 'scissors' && inputComputer === 'paper') ||
-          (inputPlayer === 'paper' && inputComputer === 'rock')
+          (inputPlayer === FIGURES[0] && inputComputer === FIGURES[1]) ||
+          (inputPlayer === FIGURES[1] && inputComputer === FIGURES[2]) ||
+          (inputPlayer === FIGURES[2] && inputComputer === FIGURES[0]) 
         ) {
           alert(`
             ${languageText.computer}: ${inputComputer}
